@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace StokTakipOtomasyonu
 {
-    public partial class SatısListele : Form
+    public partial class SatisListele : Form
     {
-        public SatısListele()
+        public SatisListele()
         {
             InitializeComponent();
         }

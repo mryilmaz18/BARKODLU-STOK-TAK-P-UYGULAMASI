@@ -1,7 +1,7 @@
 ﻿
 namespace StokTakipOtomasyonu
 {
-    partial class Ürün_Marka
+    partial class Urun_Marka
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace StokTakipOtomasyonu
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ürün_Marka));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Urun_Marka));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.ButtonEkle = new Bunifu.Framework.UI.BunifuThinButton2();
             this.comboKategori = new System.Windows.Forms.ComboBox();
@@ -69,7 +69,7 @@ namespace StokTakipOtomasyonu
             this.ButtonEkle.ActiveFillColor = System.Drawing.Color.Khaki;
             this.ButtonEkle.ActiveForecolor = System.Drawing.Color.Black;
             this.ButtonEkle.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.ButtonEkle.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ButtonEkle.BackColor = System.Drawing.SystemColors.Control;
             this.ButtonEkle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButtonEkle.BackgroundImage")));
             this.ButtonEkle.ButtonText = "Ekle";
             this.ButtonEkle.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -138,14 +138,14 @@ namespace StokTakipOtomasyonu
             this.bunifuCustomLabel6.TabIndex = 30;
             this.bunifuCustomLabel6.Text = "ÜRÜN MARKA SAYFASI";
             // 
-            // Ürün_Marka
+            // Urun_Marka
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(468, 214);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Ürün_Marka";
+            this.Name = "Urun_Marka";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ürün_Marka";
             this.Load += new System.EventHandler(this.Ürün_Marka_Load);

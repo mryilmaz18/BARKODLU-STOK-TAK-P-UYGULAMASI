@@ -1,7 +1,7 @@
 ﻿
 namespace StokTakipOtomasyonu
 {
-    partial class Ürün_Ekleme_Sayfası
+    partial class Urun_Ekleme_Sayfasi
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace StokTakipOtomasyonu
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ürün_Ekleme_Sayfası));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Urun_Ekleme_Sayfasi));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textMarka = new System.Windows.Forms.TextBox();
@@ -145,7 +145,7 @@ namespace StokTakipOtomasyonu
             this.ButtonEkle2.ActiveFillColor = System.Drawing.Color.Khaki;
             this.ButtonEkle2.ActiveForecolor = System.Drawing.Color.Black;
             this.ButtonEkle2.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.ButtonEkle2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ButtonEkle2.BackColor = System.Drawing.Color.LightSalmon;
             this.ButtonEkle2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButtonEkle2.BackgroundImage")));
             this.ButtonEkle2.ButtonText = "Ekle";
             this.ButtonEkle2.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -303,7 +303,7 @@ namespace StokTakipOtomasyonu
             this.ButtonEkle.ActiveFillColor = System.Drawing.Color.Khaki;
             this.ButtonEkle.ActiveForecolor = System.Drawing.Color.Black;
             this.ButtonEkle.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.ButtonEkle.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ButtonEkle.BackColor = System.Drawing.Color.LightSalmon;
             this.ButtonEkle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButtonEkle.BackgroundImage")));
             this.ButtonEkle.ButtonText = "Ekle";
             this.ButtonEkle.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -457,7 +457,7 @@ namespace StokTakipOtomasyonu
             this.bunifuCustomLabel6.TabIndex = 30;
             this.bunifuCustomLabel6.Text = "ÜRÜN EKLEME SAYFASI";
             // 
-            // Ürün_Ekleme_Sayfası
+            // Urun_Ekleme_Sayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -466,7 +466,7 @@ namespace StokTakipOtomasyonu
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Ürün_Ekleme_Sayfası";
+            this.Name = "Urun_Ekleme_Sayfasi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ürün_Ekleme_Sayfası";
             this.Load += new System.EventHandler(this.Ürün_Ekleme_Sayfası_Load);

@@ -16,63 +16,53 @@ using AForge.Video.DirectShow;
 
 namespace StokTakipOtomasyonu
 {
-    public partial class Giriş_Sayfası : Form
+    public partial class Giris_Sayfası : Form
     {
 
 
-        public Giriş_Sayfası()
+        public Giris_Sayfası()
         {
             InitializeComponent();
         }
 
         FilterInfoCollection fico;
         VideoCaptureDevice vcd;
+
+        void openForm(Form form)
+        {
+            this.Opacity = 0.7; 
+            form.ShowDialog();
+            this.Opacity = 1;
+        }
         private void bunifuThinButton21_Click(object sender, EventArgs e)
         {
-            this.Opacity = 0.7;
-            Müşteri_Ekleme_Sayfası mes = new Müşteri_Ekleme_Sayfası();
-            mes.ShowDialog();
-            this.Opacity = 1;
+            openForm(new Musteri_Ekleme_Sayfasi());
         }
 
         private void bunifuThinButton22_Click(object sender, EventArgs e)
         {
-            this.Opacity = 0.7;
-            Müsteri_Listeleme_Sayfası mls = new Müsteri_Listeleme_Sayfası();
-            mls.ShowDialog();
-            this.Opacity = 1;
+            openForm(new Musteri_Listeleme_Sayfasi());
+    
         }
 
         private void bunifuThinButton23_Click(object sender, EventArgs e)
         {
-            this.Opacity = 0.7;
-            Ürün_Ekleme_Sayfası ues = new Ürün_Ekleme_Sayfası();
-            ues.ShowDialog();
-            this.Opacity = 1;
+            openForm(new Urun_Ekleme_Sayfasi());
         }
 
         private void bunifuThinButton22_Click_1(object sender, EventArgs e)
         {
-            this.Opacity = 0.7;
-            Ürün_Marka ua = new Ürün_Marka();
-            ua.ShowDialog();
-            this.Opacity = 1;
+            openForm(new Urun_Marka());
         }
 
         private void bunifuThinButton21_Click_1(object sender, EventArgs e)
         {
-            this.Opacity = 0.7;
-            Ürün_Kategori uk = new Ürün_Kategori();
-            uk.ShowDialog();
-            this.Opacity = 1;
+            openForm(new Urun_Kategori());
         }
 
         private void ButtonUrunListele_Click(object sender, EventArgs e)
         {
-            this.Opacity = 0.7;
-            Urun_Listeleme ul = new Urun_Listeleme();
-            ul.ShowDialog();
-            this.Opacity = 1;
+            openForm(new Urun_Listeleme());
         }
 
 
@@ -169,10 +159,14 @@ namespace StokTakipOtomasyonu
             SqlDataReader read = komut.ExecuteReader();
             while (read.Read())
             {
-                if (textBarkod.Text==read["BarkodNo"].ToString())
+                if (textBarkod.Text == read["BarkodNo"].ToString())
                 {
                     durum = false;
                 }
+              
+
+                
+
 
             }
             baglanti.Close();
@@ -180,6 +174,11 @@ namespace StokTakipOtomasyonu
         }
         private void ButtonEkle_Click(object sender, EventArgs e)
         {
+            if (string.IsNullOrEmpty(textUrunAd.Text))
+            {
+                MessageBox.Show("Ürün seçiniz");
+                return;
+            }
             SqlCommand komut;
             bool varmi = false;
             baglanti.Open();
@@ -198,8 +197,8 @@ namespace StokTakipOtomasyonu
             }
 
 
-
             barkodkontrol();
+            
 
             if (durum ==true)
             {
@@ -216,7 +215,7 @@ namespace StokTakipOtomasyonu
                 komut.Parameters.AddWithValue("@u8", double.Parse(textToplam.Text));
                 komut.Parameters.AddWithValue("@u9", DateTime.Now.ToString());
                 komut.ExecuteNonQuery();
-                baglanti.Close();
+                baglanti.Close(); 
             }
             else
             {
@@ -303,7 +302,7 @@ namespace StokTakipOtomasyonu
         private void ButtonSatıslarıLıstele_Click(object sender, EventArgs e)
         {
             this.Opacity = 0.7;
-            SatısListele listele = new SatısListele();
+            SatisListele listele = new SatisListele();
             listele.ShowDialog();
             this.Opacity = 1;
         }
@@ -407,6 +406,11 @@ namespace StokTakipOtomasyonu
                 }
                 return;
             }
+        }
+
+        private void textTc_DoubleClick(object sender, EventArgs e)
+        {
+            openForm(new Musteri_Listeleme_Sayfasi());
         }
     }
 }

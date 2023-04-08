@@ -1,7 +1,7 @@
 ﻿
 namespace StokTakipOtomasyonu
 {
-    partial class Müşteri_Ekleme_Sayfası
+    partial class Musteri_Ekleme_Sayfasi
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace StokTakipOtomasyonu
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Müşteri_Ekleme_Sayfası));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Musteri_Ekleme_Sayfasi));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.butonKaydet = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -91,7 +91,7 @@ namespace StokTakipOtomasyonu
             this.butonKaydet.ActiveFillColor = System.Drawing.Color.Khaki;
             this.butonKaydet.ActiveForecolor = System.Drawing.Color.Black;
             this.butonKaydet.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.butonKaydet.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.butonKaydet.BackColor = System.Drawing.SystemColors.Control;
             this.butonKaydet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("butonKaydet.BackgroundImage")));
             this.butonKaydet.ButtonText = "Kaydet";
             this.butonKaydet.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -208,14 +208,14 @@ namespace StokTakipOtomasyonu
             this.maskedTC.TabIndex = 1;
             this.maskedTC.ValidatingType = typeof(int);
             // 
-            // Müşteri_Ekleme_Sayfası
+            // Musteri_Ekleme_Sayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(464, 389);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Müşteri_Ekleme_Sayfası";
+            this.Name = "Musteri_Ekleme_Sayfasi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Müşteri Ekleme Sayfası";
             this.Load += new System.EventHandler(this.Müşteri_Ekleme_Sayfası_Load);

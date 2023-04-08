@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace StokTakipOtomasyonu
 {
-    public partial class Kullanıcı_Girişi : Form
+    public partial class Kullanıcı_Girisi : Form
     {
-        public Kullanıcı_Girişi()
+        public Kullanıcı_Girisi()
         {
             InitializeComponent();
            
@@ -28,7 +28,7 @@ namespace StokTakipOtomasyonu
             SqlDataReader dr = komut.ExecuteReader();
             if (dr.Read())
             {
-                Giriş_Sayfası frm = new Giriş_Sayfası();
+                Giris_Sayfası frm = new Giris_Sayfası();
                 frm.Show();
                 this.Hide();
             }
@@ -49,7 +49,7 @@ namespace StokTakipOtomasyonu
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
-            Kullanıcı_Kayıt fr = new Kullanıcı_Kayıt();
+            Kullanici_Kayit fr = new Kullanici_Kayit();
             fr.Show();
         }
 

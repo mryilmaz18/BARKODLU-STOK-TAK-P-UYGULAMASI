@@ -1,7 +1,7 @@
 ﻿
 namespace StokTakipOtomasyonu
 {
-    partial class Kullanıcı_Girişi
+    partial class Kullanıcı_Girisi
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace StokTakipOtomasyonu
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kullanıcı_Girişi));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kullanıcı_Girisi));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pictureBox3 = new System.Windows.Forms.PictureBox();
@@ -125,7 +125,7 @@ namespace StokTakipOtomasyonu
             this.KullanıcıAdı.Name = "KullanıcıAdı";
             this.KullanıcıAdı.Size = new System.Drawing.Size(383, 48);
             this.KullanıcıAdı.TabIndex = 2;
-            this.KullanıcıAdı.Text = "Kullanıcı Adınızı Giriniz";
+            this.KullanıcıAdı.Text = "mr_yilmaz18";
             this.KullanıcıAdı.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.KullanıcıAdı.Enter += new System.EventHandler(this.KullanıcıAdı_Enter);
             this.KullanıcıAdı.Leave += new System.EventHandler(this.KullanıcıAdı_Leave);
@@ -147,7 +147,7 @@ namespace StokTakipOtomasyonu
             this.Parola.Name = "Parola";
             this.Parola.Size = new System.Drawing.Size(383, 48);
             this.Parola.TabIndex = 3;
-            this.Parola.Text = "Parolanız";
+            this.Parola.Text = "Omer567";
             this.Parola.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Parola.OnValueChanged += new System.EventHandler(this.Parola_OnValueChanged);
             this.Parola.Enter += new System.EventHandler(this.Parola_Enter);
@@ -216,7 +216,7 @@ namespace StokTakipOtomasyonu
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // Kullanıcı_Girişi
+            // Kullanıcı_Girisi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -227,7 +227,7 @@ namespace StokTakipOtomasyonu
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(7);
-            this.Name = "Kullanıcı_Girişi";
+            this.Name = "Kullanıcı_Girisi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kullanıcı_Girişi";
             this.Load += new System.EventHandler(this.Kullanıcı_Girişi_Load);

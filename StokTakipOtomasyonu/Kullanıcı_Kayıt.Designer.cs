@@ -1,7 +1,7 @@
 ﻿
 namespace StokTakipOtomasyonu
 {
-    partial class Kullanıcı_Kayıt
+    partial class Kullanici_Kayit
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace StokTakipOtomasyonu
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kullanıcı_Kayıt));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Kullanici_Kayit));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.txtParola = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.txtKullanıcıAd = new Bunifu.Framework.UI.BunifuMaterialTextbox();
@@ -277,7 +277,7 @@ namespace StokTakipOtomasyonu
             this.pictureBox4.TabStop = false;
             this.pictureBox4.Click += new System.EventHandler(this.pictureBox4_Click);
             // 
-            // Kullanıcı_Kayıt
+            // Kullanici_Kayit
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 29F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -288,7 +288,7 @@ namespace StokTakipOtomasyonu
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(7);
-            this.Name = "Kullanıcı_Kayıt";
+            this.Name = "Kullanici_Kayit";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Kullanıcı_Kayıt";
             this.Load += new System.EventHandler(this.Kullanıcı_Kayıt_Load);

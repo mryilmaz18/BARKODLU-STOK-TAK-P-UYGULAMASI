@@ -11,9 +11,9 @@ using System.Windows.Forms;
 
 namespace StokTakipOtomasyonu
 {
-    public partial class Kullanıcı_Kayıt : Form
+    public partial class Kullanici_Kayit : Form
     {
-        public Kullanıcı_Kayıt()
+        public Kullanici_Kayit()
         {
             InitializeComponent();
         }
@@ -80,7 +80,7 @@ namespace StokTakipOtomasyonu
                 txtKullanıcıAd.Text = "";
                 txtParola.Text = "";
                 MessageBox.Show("Kaydınız gerçekleşti", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                Kullanıcı_Girişi kg = new Kullanıcı_Girişi();
+                Kullanıcı_Girisi kg = new Kullanıcı_Girisi();
                 kg.Show();
                 this.Hide();
             }

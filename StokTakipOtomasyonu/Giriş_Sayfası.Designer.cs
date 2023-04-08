@@ -1,7 +1,7 @@
 ﻿
 namespace StokTakipOtomasyonu
 {
-    partial class Giriş_Sayfası
+    partial class Giris_Sayfası
     {
         /// <summary>
         /// Required designer variable.
@@ -30,7 +30,7 @@ namespace StokTakipOtomasyonu
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Giriş_Sayfası));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Giris_Sayfası));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -242,6 +242,7 @@ namespace StokTakipOtomasyonu
             // 
             this.textmarka.Location = new System.Drawing.Point(124, 112);
             this.textmarka.Name = "textmarka";
+            this.textmarka.ReadOnly = true;
             this.textmarka.Size = new System.Drawing.Size(174, 29);
             this.textmarka.TabIndex = 15;
             // 
@@ -261,6 +262,7 @@ namespace StokTakipOtomasyonu
             this.textToplam.Name = "textToplam";
             this.textToplam.Size = new System.Drawing.Size(174, 29);
             this.textToplam.TabIndex = 12;
+            this.textToplam.Text = "0";
             this.textToplam.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // textSatıs
@@ -269,6 +271,7 @@ namespace StokTakipOtomasyonu
             this.textSatıs.Name = "textSatıs";
             this.textSatıs.Size = new System.Drawing.Size(174, 29);
             this.textSatıs.TabIndex = 11;
+            this.textSatıs.Text = "0";
             this.textSatıs.TextChanged += new System.EventHandler(this.textSatıs_TextChanged);
             // 
             // textMiktar
@@ -377,6 +380,7 @@ namespace StokTakipOtomasyonu
             this.textTc.Size = new System.Drawing.Size(174, 29);
             this.textTc.TabIndex = 6;
             this.textTc.TextChanged += new System.EventHandler(this.textTc_TextChanged);
+            this.textTc.DoubleClick += new System.EventHandler(this.textTc_DoubleClick);
             // 
             // textAdSoyad
             // 
@@ -675,7 +679,7 @@ namespace StokTakipOtomasyonu
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
-            // Giriş_Sayfası
+            // Giris_Sayfası
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -685,7 +689,7 @@ namespace StokTakipOtomasyonu
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Giriş_Sayfası";
+            this.Name = "Giris_Sayfası";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Giriş Paneli";
             this.Load += new System.EventHandler(this.Giriş_Sayfası_Load);

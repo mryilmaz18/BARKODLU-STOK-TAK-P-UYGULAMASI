@@ -1,7 +1,7 @@
 ﻿
 namespace StokTakipOtomasyonu
 {
-    partial class Ürün_Kategori
+    partial class Urun_Kategori
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace StokTakipOtomasyonu
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Ürün_Kategori));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Urun_Kategori));
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.ButtonEkle = new Bunifu.Framework.UI.BunifuThinButton2();
@@ -76,7 +76,7 @@ namespace StokTakipOtomasyonu
             this.ButtonEkle.ActiveFillColor = System.Drawing.Color.Khaki;
             this.ButtonEkle.ActiveForecolor = System.Drawing.Color.Black;
             this.ButtonEkle.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.ButtonEkle.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.ButtonEkle.BackColor = System.Drawing.SystemColors.Control;
             this.ButtonEkle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButtonEkle.BackgroundImage")));
             this.ButtonEkle.ButtonText = "Ekle";
             this.ButtonEkle.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -114,14 +114,14 @@ namespace StokTakipOtomasyonu
             this.bunifuCustomLabel15.TabIndex = 31;
             this.bunifuCustomLabel15.Text = "Kategori:";
             // 
-            // Ürün_Kategori
+            // Urun_Kategori
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(405, 171);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Ürün_Kategori";
+            this.Name = "Urun_Kategori";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ürün_Kategori";
             this.Load += new System.EventHandler(this.Ürün_Kategori_Load);

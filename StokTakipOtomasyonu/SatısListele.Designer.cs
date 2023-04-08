@@ -1,7 +1,7 @@
 ﻿
 namespace StokTakipOtomasyonu
 {
-    partial class SatısListele
+    partial class SatisListele
     {
         /// <summary>
         /// Required designer variable.
@@ -29,11 +29,11 @@ namespace StokTakipOtomasyonu
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SatısListele));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SatisListele));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.ButtonSatisSil = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.ButtonSatisSil = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuGradientPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
@@ -55,6 +55,32 @@ namespace StokTakipOtomasyonu
             this.bunifuGradientPanel1.Quality = 10;
             this.bunifuGradientPanel1.Size = new System.Drawing.Size(1095, 617);
             this.bunifuGradientPanel1.TabIndex = 3;
+            // 
+            // ButtonSatisSil
+            // 
+            this.ButtonSatisSil.ActiveBorderThickness = 1;
+            this.ButtonSatisSil.ActiveCornerRadius = 20;
+            this.ButtonSatisSil.ActiveFillColor = System.Drawing.Color.Khaki;
+            this.ButtonSatisSil.ActiveForecolor = System.Drawing.Color.Black;
+            this.ButtonSatisSil.ActiveLineColor = System.Drawing.Color.SeaGreen;
+            this.ButtonSatisSil.BackColor = System.Drawing.SystemColors.Control;
+            this.ButtonSatisSil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButtonSatisSil.BackgroundImage")));
+            this.ButtonSatisSil.ButtonText = "Satıs Sil";
+            this.ButtonSatisSil.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.ButtonSatisSil.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonSatisSil.ForeColor = System.Drawing.Color.SeaGreen;
+            this.ButtonSatisSil.IdleBorderThickness = 1;
+            this.ButtonSatisSil.IdleCornerRadius = 20;
+            this.ButtonSatisSil.IdleFillColor = System.Drawing.Color.White;
+            this.ButtonSatisSil.IdleForecolor = System.Drawing.Color.Black;
+            this.ButtonSatisSil.IdleLineColor = System.Drawing.Color.SeaGreen;
+            this.ButtonSatisSil.Location = new System.Drawing.Point(955, 578);
+            this.ButtonSatisSil.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ButtonSatisSil.Name = "ButtonSatisSil";
+            this.ButtonSatisSil.Size = new System.Drawing.Size(127, 32);
+            this.ButtonSatisSil.TabIndex = 29;
+            this.ButtonSatisSil.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.ButtonSatisSil.Click += new System.EventHandler(this.ButtonSatisSil_Click);
             // 
             // bunifuCustomLabel6
             // 
@@ -78,40 +104,14 @@ namespace StokTakipOtomasyonu
             this.dataGridView1.Size = new System.Drawing.Size(1071, 520);
             this.dataGridView1.TabIndex = 0;
             // 
-            // ButtonSatisSil
-            // 
-            this.ButtonSatisSil.ActiveBorderThickness = 1;
-            this.ButtonSatisSil.ActiveCornerRadius = 20;
-            this.ButtonSatisSil.ActiveFillColor = System.Drawing.Color.Khaki;
-            this.ButtonSatisSil.ActiveForecolor = System.Drawing.Color.Black;
-            this.ButtonSatisSil.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.ButtonSatisSil.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ButtonSatisSil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButtonSatisSil.BackgroundImage")));
-            this.ButtonSatisSil.ButtonText = "Satıs Sil";
-            this.ButtonSatisSil.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.ButtonSatisSil.Font = new System.Drawing.Font("Copperplate Gothic Bold", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ButtonSatisSil.ForeColor = System.Drawing.Color.SeaGreen;
-            this.ButtonSatisSil.IdleBorderThickness = 1;
-            this.ButtonSatisSil.IdleCornerRadius = 20;
-            this.ButtonSatisSil.IdleFillColor = System.Drawing.Color.White;
-            this.ButtonSatisSil.IdleForecolor = System.Drawing.Color.Black;
-            this.ButtonSatisSil.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.ButtonSatisSil.Location = new System.Drawing.Point(955, 578);
-            this.ButtonSatisSil.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.ButtonSatisSil.Name = "ButtonSatisSil";
-            this.ButtonSatisSil.Size = new System.Drawing.Size(127, 32);
-            this.ButtonSatisSil.TabIndex = 29;
-            this.ButtonSatisSil.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.ButtonSatisSil.Click += new System.EventHandler(this.ButtonSatisSil_Click);
-            // 
-            // SatısListele
+            // SatisListele
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1095, 617);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "SatısListele";
+            this.Name = "SatisListele";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "SatısListele";
             this.Load += new System.EventHandler(this.SatısListele_Load);

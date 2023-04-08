@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Data.SqlClient;
 
 namespace StokTakipOtomasyonu
 {
@@ -16,7 +17,8 @@ namespace StokTakipOtomasyonu
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Kullanıcı_Girişi());
+            Application.Run(new Kullanıcı_Girisi());
         }
     }
+    
 }

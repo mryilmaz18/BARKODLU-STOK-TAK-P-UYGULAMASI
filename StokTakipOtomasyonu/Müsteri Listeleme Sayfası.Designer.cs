@@ -1,7 +1,7 @@
 ﻿
 namespace StokTakipOtomasyonu
 {
-    partial class Müsteri_Listeleme_Sayfası
+    partial class Musteri_Listeleme_Sayfasi
     {
         /// <summary>
         /// Required designer variable.
@@ -29,7 +29,7 @@ namespace StokTakipOtomasyonu
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Müsteri_Listeleme_Sayfası));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Musteri_Listeleme_Sayfasi));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
             this.textTCAra = new System.Windows.Forms.TextBox();
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -109,7 +109,7 @@ namespace StokTakipOtomasyonu
             this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.Khaki;
             this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.Black;
             this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.Control;
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
             this.bunifuThinButton21.ButtonText = "Sil";
             this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -146,7 +146,7 @@ namespace StokTakipOtomasyonu
             this.butonKaydet.ActiveFillColor = System.Drawing.Color.Khaki;
             this.butonKaydet.ActiveForecolor = System.Drawing.Color.Black;
             this.butonKaydet.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.butonKaydet.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.butonKaydet.BackColor = System.Drawing.SystemColors.Control;
             this.butonKaydet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("butonKaydet.BackgroundImage")));
             this.butonKaydet.ButtonText = "Güncelle";
             this.butonKaydet.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -275,14 +275,14 @@ namespace StokTakipOtomasyonu
             this.dataGridView1.TabIndex = 0;
             this.dataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellClick);
             // 
-            // Müsteri_Listeleme_Sayfası
+            // Musteri_Listeleme_Sayfasi
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1030, 521);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Name = "Müsteri_Listeleme_Sayfası";
+            this.Name = "Musteri_Listeleme_Sayfasi";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Müsteri_Listeleme_Sayfası";
             this.Load += new System.EventHandler(this.Müsteri_Listeleme_Sayfası_Load);

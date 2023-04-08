@@ -11,9 +11,9 @@ using System.Data.SqlClient;
 
 namespace StokTakipOtomasyonu
 {
-    public partial class Müşteri_Ekleme_Sayfası : Form
+    public partial class Musteri_Ekleme_Sayfasi : Form
     {
-        public Müşteri_Ekleme_Sayfası()
+        public Musteri_Ekleme_Sayfasi()
         {
             InitializeComponent();
         }
