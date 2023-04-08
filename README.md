@@ -1,13 +1,13 @@
 # Barkodlu-Stok-Takip-Otomasyonu
 Yapmış olduğum uygulama barkod sistemli stok takip uygulaması olup aşağıdaki özellikleri barındırmaktadır.
 Öncelikle bizi Login Paneli karşılamaktadır;
-	Kullanıcı kaydı yoksa kullanıcı kayıt ol seçeneğini seçerek kayıt yaptırabilir.
-Kayıt olma kısmında kişi bilgileri boş bırakmamalıdır ve TC Kimlik numarasının 11 karakterden oluşması gerekmektedir.
-Kullanıcı kayıt yaptıktan sonra Login Paneline tekrar yönlendirilerek doğru bilgileri girmesi halinde uygulamaya giriş yapması sağlanmaktadır aksi taktirde hatalı giriş ile karşılaşacaktır ve uygulamaya giriş yapamayacaktır.
-Giriş yapıldıktan sonra bizi Anasayfa karşılamaktadır. Anasayfamız müşteri ekleme, müşteri listeleme, ürün ekleme, ürün listeleme, satış listeleme, kategori ekleme, marka ekleme sayfalarına yönlendirme yapmaktadır. 
-Müşteri ekleme sayfasında boş kayıt ve daha önce oluşturulan kayıt gerçekleştirilemez.
-Müşteri listeleme sayfasında daha önce kaydedilen müşterilerin bilgileri güncellenebilir veya müşteri silinebilir. Müşteri bulma konusunda müşteri özelliklerine göre filtreleme seçeneği mevcuttur.
-Ürün ekleme sayfasında kayıtlı ürün olmaması halinde ürün bilgileri doldurularak yeni ürün kaydı gerçekleşmektedir. Boş bilgi girilmesi halinde ürün kaydı gerçekleşmemektedir.
+- Kullanıcı kaydı yoksa kullanıcı kayıt ol seçeneğini seçerek kayıt yaptırabilir.
+- Kayıt olma kısmında kişi bilgileri boş bırakmamalıdır ve TC Kimlik numarasının 11 karakterden oluşması gerekmektedir.
+- Kullanıcı kayıt yaptıktan sonra Login Paneline tekrar yönlendirilerek doğru bilgileri girmesi halinde uygulamaya giriş yapması sağlanmaktadır aksi taktirde hatalı giriş ile karşılaşacaktır ve uygulamaya giriş yapamayacaktır.
+- Giriş yapıldıktan sonra bizi Anasayfa karşılamaktadır. Anasayfamız müşteri ekleme, müşteri listeleme, ürün ekleme, ürün listeleme, satış listeleme, kategori ekleme, marka ekleme sayfalarına yönlendirme yapmaktadır. 
+- Müşteri ekleme sayfasında boş kayıt ve daha önce oluşturulan kayıt gerçekleştirilemez.
+- Müşteri listeleme sayfasında daha önce kaydedilen müşterilerin bilgileri güncellenebilir veya müşteri silinebilir. Müşteri bulma konusunda müşteri özelliklerine göre filtreleme seçeneği mevcuttur.
+- Ürün ekleme sayfasında kayıtlı ürün olmaması halinde ürün bilgileri doldurularak yeni ürün kaydı gerçekleşmektedir. Boş bilgi girilmesi halinde ürün kaydı gerçekleşmemektedir.
 Var Olan Ürün kaydında ise ürün barkod numarası girilmesi halinde ürünün geri kalan bilgileri otomatik doldurularak sadece miktar girilmesi halinde var olan ürüne ekleme yapılmaktadır.
 Ürün listeleme sayfasında daha önce kaydedilen ürünlerin bilgileri güncellenebilir, ürün silinebilir veya ürünün marka kategori alanında değişiklikler yapılabilmektedir. Ürün bulma konusunda ürün özelliklerine göre filtreleme seçeneği mevcuttur.
 Satışları listeleme kısmında daha önce yapılmış satışlar listelenmektedir. İade işlemlerinde satır seçilip silinerek stok miktarına tekrar ekleme yapılabilmektedir.
