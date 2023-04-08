@@ -4,7 +4,8 @@ Yapmış olduğum uygulama barkod sistemli stok takip uygulaması olup aşağıd
 - Kullanıcı kaydı yoksa kullanıcı kayıt ol seçeneğini seçerek kayıt yaptırabilir.
 - Kayıt olma kısmında kişi bilgileri boş bırakmamalıdır ve TC Kimlik numarasının 11 karakterden oluşması gerekmektedir.
 - Kullanıcı kayıt yaptıktan sonra Login Paneline tekrar yönlendirilerek doğru bilgileri girmesi halinde uygulamaya giriş yapması sağlanmaktadır aksi taktirde hatalı giriş ile karşılaşacaktır ve uygulamaya giriş yapamayacaktır.
-- Giriş yapıldıktan sonra bizi Anasayfa karşılamaktadır. Anasayfamız müşteri ekleme, müşteri listeleme, ürün ekleme, ürün listeleme, satış listeleme, kategori ekleme, marka ekleme sayfalarına yönlendirme yapmaktadır. 
+## Giriş yapıldıktan sonra bizi Anasayfa karşılamaktadır.
+- Anasayfamız müşteri ekleme, müşteri listeleme, ürün ekleme, ürün listeleme, satış listeleme, kategori ekleme, marka ekleme sayfalarına yönlendirme yapmaktadır. 
 - Müşteri ekleme sayfasında boş kayıt ve daha önce oluşturulan kayıt gerçekleştirilemez.
 - Müşteri listeleme sayfasında daha önce kaydedilen müşterilerin bilgileri güncellenebilir veya müşteri silinebilir. 
 - Müşteri bulma konusunda müşteri özelliklerine göre filtreleme seçeneği mevcuttur.
@@ -17,11 +18,12 @@ Yapmış olduğum uygulama barkod sistemli stok takip uygulaması olup aşağıd
 - İade işlemlerinde satır seçilip silinerek stok miktarına tekrar ekleme yapılabilmektedir.
 - Kategori sayfasında kategori alanına ekleme yapılabilmektedir.
 - Marka sayfasında ise kategori seçilerek ürün markasına ekleme yapılmaktadır.
-#Anasayfamız üzerinden erişebileceğimiz özelliklerimiz ise;
+## Anasayfamız üzerinden erişebileceğimiz özelliklerimiz ise;
 - Müşteri işlemleri kısmından müşterinin TC numarasına çift tıklanması halinde Müşteri Listesi sayfasına yönlendirilir.
-	Müşteri işlemleri kısmından müşterinin TC numarası girilmesi halinde diğer alanda otomatik doldurulmaktadır. Müşteri işlemleri doldurulmadan satış yapma işlemi gerçekleşmemektedir.
-Ürün işlemleri kısmında ise;
-	Satış ID’ si otomatik tanımlanmaktadır.
+- Müşteri işlemleri kısmından müşterinin TC numarası girilmesi halinde diğer alanda otomatik doldurulmaktadır. 
+- Müşteri işlemleri doldurulmadan satış yapma işlemi gerçekleşmemektedir.
+### Ürün işlemleri kısmında ise;
+	- Satış ID’ si otomatik tanımlanmaktadır.
 	QR simgesine basıldığı zaman Barkod Okuma Sistemi devreye girecektir. Sisteme daha önceden tanımlanan ürünlerin barkod numaraları oluşturularak okutulabilir.
 	Barkod okuması gerçekleştikten sonra ürün bilgileri listelenmektedir. Ekle seçeneğine basıldığında tekrar Barkod Numarası okutulabilir.
 	Sepete aynı ürün eklenmesi halinde sepetteki ürünün miktarına ekleme yapılmaktadır.
