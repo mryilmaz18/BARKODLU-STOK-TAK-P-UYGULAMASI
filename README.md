@@ -24,13 +24,13 @@ Yapmış olduğum uygulama barkod sistemli stok takip uygulaması olup aşağıd
 - Müşteri işlemleri kısmından müşterinin TC numarası girilmesi halinde diğer alanda otomatik doldurulmaktadır. 
 - Müşteri işlemleri doldurulmadan satış yapma işlemi gerçekleşmemektedir.
 #### Ürün işlemleri kısmında ise;
-	- Satış ID’ si otomatik tanımlanmaktadır.
-	- QR simgesine basıldığı zaman Barkod Okuma Sistemi devreye girecektir. 
-	- Sisteme daha önceden tanımlanan ürünlerin barkod numaraları oluşturularak okutulabilir.
-	- Barkod okuması gerçekleştikten sonra ürün bilgileri listelenmektedir. 
-	- Ekle seçeneğine basıldığında tekrar Barkod Numarası okutulabilir.
-	- Sepete aynı ürün eklenmesi halinde sepetteki ürünün miktarına ekleme yapılmaktadır.
-	- Sepet tutarı sepetin alt kısmında “Genel Toplam” kısmında gözükmektedir.
-	- Anasayfamızın sağ kısmında yer alan sil seçeneğinde ise satır seçilerek ürün silme işlemi gerçekleşmektedir.
-	- Sil seçeneğinin altında yer alan Satış İptal seçeneğinde ise sepet tamamen boşaltılmaktadır.
-	- Anasayfamızın sağ alt kısmında ise Satış Yap seçeneği mevcuttur. Satış yap seçeneğine tıklanması halinde satışımız Satış Listesi kısmına aktarılarak satış işlemimiz gerçekleşecektir.
+- Satış ID’ si otomatik tanımlanmaktadır.
+- QR simgesine basıldığı zaman Barkod Okuma Sistemi devreye girecektir. 
+- Sisteme daha önceden tanımlanan ürünlerin barkod numaraları oluşturularak okutulabilir.
+- Barkod okuması gerçekleştikten sonra ürün bilgileri listelenmektedir. 
+- Ekle seçeneğine basıldığında tekrar Barkod Numarası okutulabilir.
+- Sepete aynı ürün eklenmesi halinde sepetteki ürünün miktarına ekleme yapılmaktadır.
+- Sepet tutarı sepetin alt kısmında “Genel Toplam” kısmında gözükmektedir.
+- Anasayfamızın sağ kısmında yer alan sil seçeneğinde ise satır seçilerek ürün silme işlemi gerçekleşmektedir.
+- Sil seçeneğinin altında yer alan Satış İptal seçeneğinde ise sepet tamamen boşaltılmaktadır.
+- Anasayfamızın sağ alt kısmında ise Satış Yap seçeneği mevcuttur. Satış yap seçeneğine tıklanması halinde satışımız Satış Listesi kısmına aktarılarak satış işlemimiz gerçekleşecektir.
