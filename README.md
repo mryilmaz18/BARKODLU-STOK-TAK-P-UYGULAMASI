@@ -29,6 +29,7 @@ Yapmış olduğum uygulama barkod sistemli stok takip uygulaması olup aşağıd
 - Sisteme daha önceden tanımlanan ürünlerin barkod numaraları oluşturularak okutulabilir.
 - Barkod okuması gerçekleştikten sonra ürün bilgileri listelenmektedir. 
 - Ekle seçeneğine basıldığında tekrar Barkod Numarası okutulabilir.
+#### Sepet işlemleri kısmında ise;
 - Sepete aynı ürün eklenmesi halinde sepetteki ürünün miktarına ekleme yapılmaktadır.
 - Sepet tutarı sepetin alt kısmında “Genel Toplam” kısmında gözükmektedir.
 - Anasayfamızın sağ kısmında yer alan sil seçeneğinde ise satır seçilerek ürün silme işlemi gerçekleşmektedir.
