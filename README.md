@@ -19,12 +19,13 @@ Yapmış olduğum uygulama barkod sistemli stok takip uygulaması olup aşağıd
 - Kategori sayfasında kategori alanına ekleme yapılabilmektedir.
 - Marka sayfasında ise kategori seçilerek ürün markasına ekleme yapılmaktadır.
 ## Anasayfamız üzerinden erişebileceğimiz özelliklerimiz ise;
-- Müşteri işlemleri kısmından müşterinin TC numarasına çift tıklanması halinde Müşteri Listesi sayfasına yönlendirilir.
+### Müşteri işlemleri kısmında; 
+- Müşterinin TC numarasına çift tıklanması halinde Müşteri Listesi sayfasına yönlendirilir.
 - Müşteri işlemleri kısmından müşterinin TC numarası girilmesi halinde diğer alanda otomatik doldurulmaktadır. 
 - Müşteri işlemleri doldurulmadan satış yapma işlemi gerçekleşmemektedir.
 ### Ürün işlemleri kısmında ise;
 	- Satış ID’ si otomatik tanımlanmaktadır.
-	QR simgesine basıldığı zaman Barkod Okuma Sistemi devreye girecektir. Sisteme daha önceden tanımlanan ürünlerin barkod numaraları oluşturularak okutulabilir.
+	- QR simgesine basıldığı zaman Barkod Okuma Sistemi devreye girecektir. Sisteme daha önceden tanımlanan ürünlerin barkod numaraları oluşturularak okutulabilir.
 	Barkod okuması gerçekleştikten sonra ürün bilgileri listelenmektedir. Ekle seçeneğine basıldığında tekrar Barkod Numarası okutulabilir.
 	Sepete aynı ürün eklenmesi halinde sepetteki ürünün miktarına ekleme yapılmaktadır.
 	Sepet tutarı sepetin alt kısmında “Genel Toplam” kısmında gözükmektedir.
