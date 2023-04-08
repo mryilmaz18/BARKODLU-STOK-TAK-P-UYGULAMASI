@@ -1,6 +1,6 @@
 # Barkodlu-Stok-Takip-Otomasyonu
 Yapmış olduğum uygulama barkod sistemli stok takip uygulaması olup aşağıdaki özellikleri barındırmaktadır.
-Öncelikle bizi Login Paneli karşılamaktadır;
+# Öncelikle bizi Login Paneli karşılamaktadır;
 - Kullanıcı kaydı yoksa kullanıcı kayıt ol seçeneğini seçerek kayıt yaptırabilir.
 - Kayıt olma kısmında kişi bilgileri boş bırakmamalıdır ve TC Kimlik numarasının 11 karakterden oluşması gerekmektedir.
 - Kullanıcı kayıt yaptıktan sonra Login Paneline tekrar yönlendirilerek doğru bilgileri girmesi halinde uygulamaya giriş yapması sağlanmaktadır aksi taktirde hatalı giriş ile karşılaşacaktır ve uygulamaya giriş yapamayacaktır.
