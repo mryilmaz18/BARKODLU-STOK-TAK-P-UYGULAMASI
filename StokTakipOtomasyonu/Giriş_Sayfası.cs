@@ -301,10 +301,7 @@ namespace StokTakipOtomasyonu
 
         private void ButtonSatıslarıLıstele_Click(object sender, EventArgs e)
         {
-            this.Opacity = 0.7;
-            SatisListele listele = new SatisListele();
-            listele.ShowDialog();
-            this.Opacity = 1;
+            openForm(new SatisListele());
         }
 
         private void hesapla()
