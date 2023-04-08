@@ -125,7 +125,7 @@ namespace StokTakipOtomasyonu
             this.KullanıcıAdı.Name = "KullanıcıAdı";
             this.KullanıcıAdı.Size = new System.Drawing.Size(383, 48);
             this.KullanıcıAdı.TabIndex = 2;
-            this.KullanıcıAdı.Text = "mr_yilmaz18";
+            this.KullanıcıAdı.Text = "Kullanıcı Adınızı Giriniz";
             this.KullanıcıAdı.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.KullanıcıAdı.Enter += new System.EventHandler(this.KullanıcıAdı_Enter);
             this.KullanıcıAdı.Leave += new System.EventHandler(this.KullanıcıAdı_Leave);
@@ -147,7 +147,7 @@ namespace StokTakipOtomasyonu
             this.Parola.Name = "Parola";
             this.Parola.Size = new System.Drawing.Size(383, 48);
             this.Parola.TabIndex = 3;
-            this.Parola.Text = "Omer567";
+            this.Parola.Text = "Parolanız";
             this.Parola.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.Parola.OnValueChanged += new System.EventHandler(this.Parola_OnValueChanged);
             this.Parola.Enter += new System.EventHandler(this.Parola_Enter);
