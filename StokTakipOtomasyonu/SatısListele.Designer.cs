@@ -31,6 +31,7 @@ namespace StokTakipOtomasyonu
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(SatisListele));
             this.bunifuGradientPanel1 = new Bunifu.Framework.UI.BunifuGradientPanel();
+            this.LabelGenelToplam = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.ButtonSatisSil = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuCustomLabel6 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
@@ -42,6 +43,7 @@ namespace StokTakipOtomasyonu
             // 
             this.bunifuGradientPanel1.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuGradientPanel1.BackgroundImage")));
             this.bunifuGradientPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuGradientPanel1.Controls.Add(this.LabelGenelToplam);
             this.bunifuGradientPanel1.Controls.Add(this.ButtonSatisSil);
             this.bunifuGradientPanel1.Controls.Add(this.bunifuCustomLabel6);
             this.bunifuGradientPanel1.Controls.Add(this.dataGridView1);
@@ -53,8 +55,19 @@ namespace StokTakipOtomasyonu
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1095, 617);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1095, 626);
             this.bunifuGradientPanel1.TabIndex = 3;
+            // 
+            // LabelGenelToplam
+            // 
+            this.LabelGenelToplam.AutoSize = true;
+            this.LabelGenelToplam.BackColor = System.Drawing.Color.Transparent;
+            this.LabelGenelToplam.Font = new System.Drawing.Font("Copperplate Gothic Bold", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.LabelGenelToplam.Location = new System.Drawing.Point(323, 592);
+            this.LabelGenelToplam.Name = "LabelGenelToplam";
+            this.LabelGenelToplam.Size = new System.Drawing.Size(174, 24);
+            this.LabelGenelToplam.TabIndex = 30;
+            this.LabelGenelToplam.Text = "Genel Toplam";
             // 
             // ButtonSatisSil
             // 
@@ -63,7 +76,7 @@ namespace StokTakipOtomasyonu
             this.ButtonSatisSil.ActiveFillColor = System.Drawing.Color.Khaki;
             this.ButtonSatisSil.ActiveForecolor = System.Drawing.Color.Black;
             this.ButtonSatisSil.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.ButtonSatisSil.BackColor = System.Drawing.SystemColors.Control;
+            this.ButtonSatisSil.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ButtonSatisSil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButtonSatisSil.BackgroundImage")));
             this.ButtonSatisSil.ButtonText = "Satıs Sil";
             this.ButtonSatisSil.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -74,7 +87,7 @@ namespace StokTakipOtomasyonu
             this.ButtonSatisSil.IdleFillColor = System.Drawing.Color.White;
             this.ButtonSatisSil.IdleForecolor = System.Drawing.Color.Black;
             this.ButtonSatisSil.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.ButtonSatisSil.Location = new System.Drawing.Point(955, 578);
+            this.ButtonSatisSil.Location = new System.Drawing.Point(956, 584);
             this.ButtonSatisSil.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ButtonSatisSil.Name = "ButtonSatisSil";
             this.ButtonSatisSil.Size = new System.Drawing.Size(127, 32);
@@ -108,7 +121,7 @@ namespace StokTakipOtomasyonu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1095, 617);
+            this.ClientSize = new System.Drawing.Size(1095, 626);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "SatisListele";
@@ -128,5 +141,6 @@ namespace StokTakipOtomasyonu
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel6;
         private System.Windows.Forms.DataGridView dataGridView1;
         private Bunifu.Framework.UI.BunifuThinButton2 ButtonSatisSil;
+        private Bunifu.Framework.UI.BunifuCustomLabel LabelGenelToplam;
     }
 }

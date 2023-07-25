@@ -91,7 +91,7 @@ namespace StokTakipOtomasyonu
             this.butonKaydet.ActiveFillColor = System.Drawing.Color.Khaki;
             this.butonKaydet.ActiveForecolor = System.Drawing.Color.Black;
             this.butonKaydet.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.butonKaydet.BackColor = System.Drawing.SystemColors.Control;
+            this.butonKaydet.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.butonKaydet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("butonKaydet.BackgroundImage")));
             this.butonKaydet.ButtonText = "Kaydet";
             this.butonKaydet.Cursor = System.Windows.Forms.Cursors.Hand;

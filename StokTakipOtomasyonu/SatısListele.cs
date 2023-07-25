@@ -33,6 +33,21 @@ namespace StokTakipOtomasyonu
         private void SatısListele_Load(object sender, EventArgs e)
         {
             satıslistele();
+            satishesapla();
+        }
+        private void satishesapla()
+        {
+            try
+            {
+                baglanti.Open();
+                SqlCommand komut = new SqlCommand("Select Sum(ToplamFiyat) from Satıs", baglanti);
+                LabelGenelToplam.Text = "GENEL TOPLAM    " + komut.ExecuteScalar() + "  TL";
+                baglanti.Close();
+            }
+            catch (Exception)
+            {
+                ;
+            }
         }
 
         private void ButtonSatisSil_Click(object sender, EventArgs e)

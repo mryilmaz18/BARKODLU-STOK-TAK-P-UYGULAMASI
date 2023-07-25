@@ -145,7 +145,7 @@ namespace StokTakipOtomasyonu
             this.ButtonEkle2.ActiveFillColor = System.Drawing.Color.Khaki;
             this.ButtonEkle2.ActiveForecolor = System.Drawing.Color.Black;
             this.ButtonEkle2.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.ButtonEkle2.BackColor = System.Drawing.Color.LightSalmon;
+            this.ButtonEkle2.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ButtonEkle2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButtonEkle2.BackgroundImage")));
             this.ButtonEkle2.ButtonText = "Ekle";
             this.ButtonEkle2.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -303,7 +303,7 @@ namespace StokTakipOtomasyonu
             this.ButtonEkle.ActiveFillColor = System.Drawing.Color.Khaki;
             this.ButtonEkle.ActiveForecolor = System.Drawing.Color.Black;
             this.ButtonEkle.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.ButtonEkle.BackColor = System.Drawing.Color.LightSalmon;
+            this.ButtonEkle.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ButtonEkle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ButtonEkle.BackgroundImage")));
             this.ButtonEkle.ButtonText = "Ekle";
             this.ButtonEkle.Cursor = System.Windows.Forms.Cursors.Hand;

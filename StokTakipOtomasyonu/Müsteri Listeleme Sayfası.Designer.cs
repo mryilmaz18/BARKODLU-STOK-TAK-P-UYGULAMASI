@@ -109,7 +109,7 @@ namespace StokTakipOtomasyonu
             this.bunifuThinButton21.ActiveFillColor = System.Drawing.Color.Khaki;
             this.bunifuThinButton21.ActiveForecolor = System.Drawing.Color.Black;
             this.bunifuThinButton21.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.Control;
+            this.bunifuThinButton21.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.bunifuThinButton21.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton21.BackgroundImage")));
             this.bunifuThinButton21.ButtonText = "Sil";
             this.bunifuThinButton21.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -146,7 +146,7 @@ namespace StokTakipOtomasyonu
             this.butonKaydet.ActiveFillColor = System.Drawing.Color.Khaki;
             this.butonKaydet.ActiveForecolor = System.Drawing.Color.Black;
             this.butonKaydet.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.butonKaydet.BackColor = System.Drawing.SystemColors.Control;
+            this.butonKaydet.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.butonKaydet.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("butonKaydet.BackgroundImage")));
             this.butonKaydet.ButtonText = "Güncelle";
             this.butonKaydet.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -157,7 +157,7 @@ namespace StokTakipOtomasyonu
             this.butonKaydet.IdleFillColor = System.Drawing.Color.White;
             this.butonKaydet.IdleForecolor = System.Drawing.Color.Black;
             this.butonKaydet.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.butonKaydet.Location = new System.Drawing.Point(221, 396);
+            this.butonKaydet.Location = new System.Drawing.Point(221, 393);
             this.butonKaydet.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
             this.butonKaydet.Name = "butonKaydet";
             this.butonKaydet.Size = new System.Drawing.Size(134, 32);
