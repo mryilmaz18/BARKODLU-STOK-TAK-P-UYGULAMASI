@@ -65,7 +65,6 @@ namespace StokTakipOtomasyonu
             daset.Tables["Satıs"].Clear();
             satıslistele();
             satishesapla();
-            /*omer*/
         }
     }
 }
