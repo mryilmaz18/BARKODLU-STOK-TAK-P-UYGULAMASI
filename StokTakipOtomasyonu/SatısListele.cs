@@ -64,6 +64,7 @@ namespace StokTakipOtomasyonu
             MessageBox.Show("Satış Silindi");
             daset.Tables["Satıs"].Clear();
             satıslistele();
+            satishesapla();
         }
     }
 }
