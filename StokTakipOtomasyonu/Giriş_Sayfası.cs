@@ -71,9 +71,9 @@ namespace StokTakipOtomasyonu
         private void sepetlistele()
         {
             baglanti.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("Select *From Sepet", baglanti);
-            sda.Fill(daset,"Sepet");
-            dataGridView1.DataSource = daset.Tables["Sepet"];
+            SqlDataAdapter sda = new SqlDataAdapter("Select *From Sepet1", baglanti);
+            sda.Fill(daset,"Sepet1");
+            dataGridView1.DataSource = daset.Tables["Sepet1"];
             dataGridView1.Columns[0].Visible = false;
             dataGridView1.Columns[1].Visible = false;
             
@@ -104,6 +104,7 @@ namespace StokTakipOtomasyonu
             textID.Text = "";
             textmarka.Text = "";
             textUrunAd.Text = "";
+            alisfiyat.Text = "";
             textSatıs.Text = "";
             baglanti.Open();
             SqlCommand komut = new SqlCommand("Select * from Tbl_Urunler  where BarkodNo Like '" + textBarkod.Text + "'", baglanti);
@@ -112,6 +113,7 @@ namespace StokTakipOtomasyonu
             {
                 textmarka.Text = read["Marka"].ToString();
                 textUrunAd.Text = read["UrunAdı"].ToString();
+                alisfiyat.Text = read["AlısFiyat"].ToString();
                 textSatıs.Text = read["SatısFiyat"].ToString();
             }
             baglanti.Close();
@@ -155,7 +157,7 @@ namespace StokTakipOtomasyonu
         {
             durum = true;
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("Select * From Sepet", baglanti);
+            SqlCommand komut = new SqlCommand("Select * From Sepet1", baglanti);
             SqlDataReader read = komut.ExecuteReader();
             while (read.Read())
             {
@@ -203,7 +205,7 @@ namespace StokTakipOtomasyonu
             if (durum ==true)
             {
                 baglanti.Open();
-                komut = new SqlCommand("insert into Sepet(Tc,AdSoyad,Telefon,BarkodNo,Marka,UrunAdı,Miktar,SatısFiyat,ToplamFiyat,Tarih) values (@u1,@u2,@u3,@u4,@u10,@u5,@u6,@u7,@u8,@u9)", baglanti);
+                komut = new SqlCommand("insert into Sepet1(Tc,AdSoyad,Telefon,BarkodNo,Marka,UrunAdı,Miktar,AlısFiyat,SatisFiyat,ToplamAlısFiyat,ToplamSatısFiyat,Tarih) values (@u1,@u2,@u3,@u4,@u10,@u5,@u6,@u11,@u7,@u12,@u8,@u9)", baglanti);
                 komut.Parameters.AddWithValue("@u1", textTc.Text);
                 komut.Parameters.AddWithValue("@u2", textAdSoyad.Text);
                 komut.Parameters.AddWithValue("@u3", textKAD.Text);
@@ -211,7 +213,9 @@ namespace StokTakipOtomasyonu
                 komut.Parameters.AddWithValue("@u10", textmarka.Text);
                 komut.Parameters.AddWithValue("@u5", textUrunAd.Text);
                 komut.Parameters.AddWithValue("@u6", int.Parse(textMiktar.Text));
+                komut.Parameters.AddWithValue("@u11", double.Parse(alisfiyat.Text));
                 komut.Parameters.AddWithValue("@u7", double.Parse(textSatıs.Text));
+                komut.Parameters.AddWithValue("@u12", double.Parse(talisfiyat.Text));
                 komut.Parameters.AddWithValue("@u8", double.Parse(textToplam.Text));
                 komut.Parameters.AddWithValue("@u9", DateTime.Now.ToString());
                 komut.ExecuteNonQuery();
@@ -220,15 +224,15 @@ namespace StokTakipOtomasyonu
             else
             {
                 baglanti.Open();
-                SqlCommand komut2 = new SqlCommand("Update Sepet set Miktar=Miktar+'" + int.Parse(textMiktar.Text) + "'Where BarkodNo='" + textBarkod.Text + "'", baglanti);
+                SqlCommand komut2 = new SqlCommand("Update Sepet1 set Miktar=Miktar+'" + int.Parse(textMiktar.Text) + "'Where BarkodNo='" + textBarkod.Text + "'", baglanti);
                 komut2.ExecuteNonQuery();
-                SqlCommand komut3 = new SqlCommand("Update Sepet set ToplamFiyat=Miktar*SatısFiyat Where BarkodNo='" + textBarkod.Text + "'", baglanti);
+                SqlCommand komut3 = new SqlCommand("Update Sepet1 set ToplamSatısFiyat=Miktar*SatisFiyat Where BarkodNo='" + textBarkod.Text + "'", baglanti);
                 komut3.ExecuteNonQuery();
                 baglanti.Close();
             }
             
             textMiktar.Text = "1";
-            daset.Tables["Sepet"].Clear();
+            daset.Tables["Sepet1"].Clear();
             sepetlistele();
             hesapla();
             foreach (Control item in groupUrun.Controls)
@@ -247,8 +251,10 @@ namespace StokTakipOtomasyonu
 
         private void textMiktar_TextChanged(object sender, EventArgs e)
         {
+           
             try
             {
+                talisfiyat.Text = (double.Parse(textMiktar.Text) * double.Parse(alisfiyat.Text)).ToString();
                 textToplam.Text = (double.Parse(textMiktar.Text) * double.Parse(textSatıs.Text)).ToString();
             }
             catch(Exception)
@@ -261,6 +267,7 @@ namespace StokTakipOtomasyonu
         {
             try
             {
+                talisfiyat.Text = (double.Parse(textMiktar.Text) * double.Parse(alisfiyat.Text)).ToString();
                 textToplam.Text = (double.Parse(textMiktar.Text) * double.Parse(textSatıs.Text)).ToString();
             }
             catch (Exception)
@@ -277,11 +284,11 @@ namespace StokTakipOtomasyonu
                 return;
             }
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("Delete From Sepet where BarkodNo='"+dataGridView1.CurrentRow.Cells["BarkodNo"].Value.ToString()+"'",baglanti);
+            SqlCommand komut = new SqlCommand("Delete From Sepet1 where BarkodNo='"+dataGridView1.CurrentRow.Cells["BarkodNo"].Value.ToString()+"'",baglanti);
             komut.ExecuteNonQuery();
             baglanti.Close();
             MessageBox.Show("Sepetteki Ürün Silindi");
-            daset.Tables["Sepet"].Clear();
+            daset.Tables["Sepet1"].Clear();
             sepetlistele();
             hesapla();
 
@@ -290,11 +297,11 @@ namespace StokTakipOtomasyonu
         private void ButtonSatısIptal_Click(object sender, EventArgs e)
         {
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("Delete From Sepet", baglanti);
+            SqlCommand komut = new SqlCommand("Delete From Sepet1", baglanti);
             komut.ExecuteNonQuery();
             baglanti.Close();
             MessageBox.Show("Sepetteki Ürünler Silindi");
-            daset.Tables["Sepet"].Clear();
+            daset.Tables["Sepet1"].Clear();
             sepetlistele();
             hesapla();
         }
@@ -309,7 +316,7 @@ namespace StokTakipOtomasyonu
             try
             {
                 baglanti.Open();
-                SqlCommand komut = new SqlCommand("Select Sum(ToplamFiyat) from sepet", baglanti);
+                SqlCommand komut = new SqlCommand("Select Sum(ToplamSatısFiyat) from sepet1", baglanti);
                 LabelGenelToplam.Text = "GENEL TOPLAM    "+komut.ExecuteScalar() + "  TL";
                 baglanti.Close();
             }
@@ -334,26 +341,28 @@ namespace StokTakipOtomasyonu
             for(int i= 0; i < dataGridView1.Rows.Count - 1; i++)
             {
                 baglanti.Open();
-                SqlCommand komut= new SqlCommand("insert into Satıs(Tc,AdSoyad,Telefon,BarkodNo,UrunAdı,Miktar,SatısFiyat,ToplamFiyat,Tarih) values (@u1,@u2,@u3,@u4,@u5,@u6,@u7,@u8,@u9)", baglanti);
+                SqlCommand komut= new SqlCommand("insert into Satıs1(Tc,AdSoyad,Telefon,BarkodNo,UrunAdı,Miktar,AlısFiyat,SatısFiyat,ToplamAlısFiyat,ToplamSatısFiyat,Tarih) values (@u1,@u2,@u3,@u4,@u5,@u6,@u7,@u8,@u9,@u10,@u11)", baglanti);
                 komut.Parameters.AddWithValue("@u1", textTc.Text);
                 komut.Parameters.AddWithValue("@u2", textAdSoyad.Text);
                 komut.Parameters.AddWithValue("@u3", textKAD.Text);
                 komut.Parameters.AddWithValue("@u4", dataGridView1.Rows[i].Cells["BarkodNo"].Value.ToString());
                 komut.Parameters.AddWithValue("@u5", dataGridView1.Rows[i].Cells["UrunAdı"].Value.ToString());
                 komut.Parameters.AddWithValue("@u6", int.Parse(dataGridView1.Rows[i].Cells["Miktar"].Value.ToString()));
-                komut.Parameters.AddWithValue("@u7", double.Parse(dataGridView1.Rows[i].Cells["SatısFiyat"].Value.ToString()));
-                komut.Parameters.AddWithValue("@u8", double.Parse(dataGridView1.Rows[i].Cells["ToplamFiyat"].Value.ToString()));
-                komut.Parameters.AddWithValue("@u9", DateTime.Now.ToString());
+                komut.Parameters.AddWithValue("@u7", double.Parse(dataGridView1.Rows[i].Cells["AlısFiyat"].Value.ToString()));
+                komut.Parameters.AddWithValue("@u8", double.Parse(dataGridView1.Rows[i].Cells["SatisFiyat"].Value.ToString()));
+                komut.Parameters.AddWithValue("@u9", double.Parse(dataGridView1.Rows[i].Cells["ToplamAlısFiyat"].Value.ToString()));
+                komut.Parameters.AddWithValue("@u10", double.Parse(dataGridView1.Rows[i].Cells["ToplamSatısFiyat"].Value.ToString()));
+                komut.Parameters.AddWithValue("@u11", DateTime.Now.ToString());
                 komut.ExecuteNonQuery();
                 SqlCommand komut2 = new SqlCommand("Update Tbl_Urunler set Miktar=Miktar-'" + int.Parse(dataGridView1.Rows[i].Cells["Miktar"].Value.ToString()) + "' where BarkodNo='" + dataGridView1.Rows[i].Cells["BarkodNo"].Value.ToString() + "'", baglanti);
                 komut2.ExecuteNonQuery();
                 baglanti.Close();
             }
             baglanti.Open();
-            SqlCommand komut3 = new SqlCommand("Delete From Sepet",baglanti);
+            SqlCommand komut3 = new SqlCommand("Delete From Sepet1",baglanti);
             komut3.ExecuteNonQuery();
             baglanti.Close();
-            daset.Tables["Sepet"].Clear();
+            daset.Tables["Sepet1"].Clear();
             sepetlistele();
             hesapla();
         }
@@ -408,6 +417,21 @@ namespace StokTakipOtomasyonu
         private void textTc_DoubleClick(object sender, EventArgs e)
         {
             openForm(new Musteri_Listeleme_Sayfasi());
+        }
+
+        private void textToplam_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomLabel7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textmarka_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -110,7 +110,7 @@ namespace StokTakipOtomasyonu
             this.butonGuncelle2.ActiveFillColor = System.Drawing.Color.Khaki;
             this.butonGuncelle2.ActiveForecolor = System.Drawing.Color.Black;
             this.butonGuncelle2.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.butonGuncelle2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.butonGuncelle2.BackColor = System.Drawing.SystemColors.Control;
             this.butonGuncelle2.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("butonGuncelle2.BackgroundImage")));
             this.butonGuncelle2.ButtonText = "Güncelle";
             this.butonGuncelle2.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -332,6 +332,7 @@ namespace StokTakipOtomasyonu
             this.bunifuCustomLabel7.Size = new System.Drawing.Size(175, 21);
             this.bunifuCustomLabel7.TabIndex = 31;
             this.bunifuCustomLabel7.Text = "Ürün Bilgi Ara:";
+            this.bunifuCustomLabel7.Click += new System.EventHandler(this.bunifuCustomLabel7_Click);
             // 
             // butonSil
             // 
@@ -340,7 +341,7 @@ namespace StokTakipOtomasyonu
             this.butonSil.ActiveFillColor = System.Drawing.Color.Khaki;
             this.butonSil.ActiveForecolor = System.Drawing.Color.Black;
             this.butonSil.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.butonSil.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.butonSil.BackColor = System.Drawing.SystemColors.Control;
             this.butonSil.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("butonSil.BackgroundImage")));
             this.butonSil.ButtonText = "Sil";
             this.butonSil.Cursor = System.Windows.Forms.Cursors.Hand;
@@ -377,7 +378,7 @@ namespace StokTakipOtomasyonu
             this.butonGuncelle.ActiveFillColor = System.Drawing.Color.Khaki;
             this.butonGuncelle.ActiveForecolor = System.Drawing.Color.Black;
             this.butonGuncelle.ActiveLineColor = System.Drawing.Color.SeaGreen;
-            this.butonGuncelle.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.butonGuncelle.BackColor = System.Drawing.SystemColors.Control;
             this.butonGuncelle.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("butonGuncelle.BackgroundImage")));
             this.butonGuncelle.ButtonText = "Güncelle";
             this.butonGuncelle.Cursor = System.Windows.Forms.Cursors.Hand;

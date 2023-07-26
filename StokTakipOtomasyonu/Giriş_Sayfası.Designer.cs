@@ -35,6 +35,10 @@ namespace StokTakipOtomasyonu
             this.bunifuThinButton22 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.bunifuThinButton21 = new Bunifu.Framework.UI.BunifuThinButton2();
             this.groupUrun = new System.Windows.Forms.GroupBox();
+            this.alisfiyat = new System.Windows.Forms.TextBox();
+            this.bunifuCustomLabel12 = new Bunifu.Framework.UI.BunifuCustomLabel();
+            this.talisfiyat = new System.Windows.Forms.TextBox();
+            this.bunifuCustomLabel11 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.textID = new System.Windows.Forms.TextBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.bunifuCustomLabel10 = new Bunifu.Framework.UI.BunifuCustomLabel();
@@ -105,7 +109,7 @@ namespace StokTakipOtomasyonu
             this.bunifuGradientPanel1.Location = new System.Drawing.Point(0, 0);
             this.bunifuGradientPanel1.Name = "bunifuGradientPanel1";
             this.bunifuGradientPanel1.Quality = 10;
-            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1367, 635);
+            this.bunifuGradientPanel1.Size = new System.Drawing.Size(1405, 669);
             this.bunifuGradientPanel1.TabIndex = 0;
             this.bunifuGradientPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.bunifuGradientPanel1_Paint);
             // 
@@ -127,7 +131,7 @@ namespace StokTakipOtomasyonu
             this.bunifuThinButton22.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton22.IdleForecolor = System.Drawing.Color.Black;
             this.bunifuThinButton22.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton22.Location = new System.Drawing.Point(1235, 42);
+            this.bunifuThinButton22.Location = new System.Drawing.Point(1265, 42);
             this.bunifuThinButton22.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton22.Name = "bunifuThinButton22";
             this.bunifuThinButton22.Size = new System.Drawing.Size(127, 32);
@@ -153,7 +157,7 @@ namespace StokTakipOtomasyonu
             this.bunifuThinButton21.IdleFillColor = System.Drawing.Color.White;
             this.bunifuThinButton21.IdleForecolor = System.Drawing.Color.Black;
             this.bunifuThinButton21.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.bunifuThinButton21.Location = new System.Drawing.Point(1235, 5);
+            this.bunifuThinButton21.Location = new System.Drawing.Point(1265, 5);
             this.bunifuThinButton21.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.bunifuThinButton21.Name = "bunifuThinButton21";
             this.bunifuThinButton21.Size = new System.Drawing.Size(127, 32);
@@ -164,6 +168,10 @@ namespace StokTakipOtomasyonu
             // groupUrun
             // 
             this.groupUrun.BackColor = System.Drawing.Color.CadetBlue;
+            this.groupUrun.Controls.Add(this.alisfiyat);
+            this.groupUrun.Controls.Add(this.bunifuCustomLabel12);
+            this.groupUrun.Controls.Add(this.talisfiyat);
+            this.groupUrun.Controls.Add(this.bunifuCustomLabel11);
             this.groupUrun.Controls.Add(this.textID);
             this.groupUrun.Controls.Add(this.pictureBox1);
             this.groupUrun.Controls.Add(this.bunifuCustomLabel10);
@@ -184,10 +192,47 @@ namespace StokTakipOtomasyonu
             this.groupUrun.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.groupUrun.Location = new System.Drawing.Point(13, 294);
             this.groupUrun.Name = "groupUrun";
-            this.groupUrun.Size = new System.Drawing.Size(310, 312);
+            this.groupUrun.Size = new System.Drawing.Size(310, 372);
             this.groupUrun.TabIndex = 12;
             this.groupUrun.TabStop = false;
             this.groupUrun.Text = "Ürün İşlemleri";
+            // 
+            // alisfiyat
+            // 
+            this.alisfiyat.Location = new System.Drawing.Point(124, 223);
+            this.alisfiyat.Name = "alisfiyat";
+            this.alisfiyat.Size = new System.Drawing.Size(174, 29);
+            this.alisfiyat.TabIndex = 24;
+            this.alisfiyat.Text = "0";
+            // 
+            // bunifuCustomLabel12
+            // 
+            this.bunifuCustomLabel12.AutoSize = true;
+            this.bunifuCustomLabel12.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bunifuCustomLabel12.Location = new System.Drawing.Point(32, 226);
+            this.bunifuCustomLabel12.Name = "bunifuCustomLabel12";
+            this.bunifuCustomLabel12.Size = new System.Drawing.Size(93, 24);
+            this.bunifuCustomLabel12.TabIndex = 23;
+            this.bunifuCustomLabel12.Text = "Alış Fiyatı:";
+            // 
+            // talisfiyat
+            // 
+            this.talisfiyat.Location = new System.Drawing.Point(124, 295);
+            this.talisfiyat.Name = "talisfiyat";
+            this.talisfiyat.Size = new System.Drawing.Size(174, 29);
+            this.talisfiyat.TabIndex = 22;
+            this.talisfiyat.Text = "0";
+            this.talisfiyat.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // bunifuCustomLabel11
+            // 
+            this.bunifuCustomLabel11.AutoSize = true;
+            this.bunifuCustomLabel11.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.bunifuCustomLabel11.Location = new System.Drawing.Point(19, 298);
+            this.bunifuCustomLabel11.Name = "bunifuCustomLabel11";
+            this.bunifuCustomLabel11.Size = new System.Drawing.Size(106, 24);
+            this.bunifuCustomLabel11.TabIndex = 21;
+            this.bunifuCustomLabel11.Text = "T.Alış Fiyat:";
             // 
             // textID
             // 
@@ -245,6 +290,7 @@ namespace StokTakipOtomasyonu
             this.textmarka.ReadOnly = true;
             this.textmarka.Size = new System.Drawing.Size(174, 29);
             this.textmarka.TabIndex = 15;
+            this.textmarka.TextChanged += new System.EventHandler(this.textmarka_TextChanged);
             // 
             // bunifuCustomLabel1
             // 
@@ -258,16 +304,17 @@ namespace StokTakipOtomasyonu
             // 
             // textToplam
             // 
-            this.textToplam.Location = new System.Drawing.Point(124, 268);
+            this.textToplam.Location = new System.Drawing.Point(124, 331);
             this.textToplam.Name = "textToplam";
             this.textToplam.Size = new System.Drawing.Size(174, 29);
             this.textToplam.TabIndex = 12;
             this.textToplam.Text = "0";
             this.textToplam.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.textToplam.TextChanged += new System.EventHandler(this.textToplam_TextChanged);
             // 
             // textSatıs
             // 
-            this.textSatıs.Location = new System.Drawing.Point(124, 229);
+            this.textSatıs.Location = new System.Drawing.Point(124, 259);
             this.textSatıs.Name = "textSatıs";
             this.textSatıs.Size = new System.Drawing.Size(174, 29);
             this.textSatıs.TabIndex = 11;
@@ -276,7 +323,7 @@ namespace StokTakipOtomasyonu
             // 
             // textMiktar
             // 
-            this.textMiktar.Location = new System.Drawing.Point(124, 190);
+            this.textMiktar.Location = new System.Drawing.Point(124, 187);
             this.textMiktar.Name = "textMiktar";
             this.textMiktar.Size = new System.Drawing.Size(174, 29);
             this.textMiktar.TabIndex = 10;
@@ -303,17 +350,17 @@ namespace StokTakipOtomasyonu
             // 
             this.bunifuCustomLabel9.AutoSize = true;
             this.bunifuCustomLabel9.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bunifuCustomLabel9.Location = new System.Drawing.Point(2, 271);
+            this.bunifuCustomLabel9.Location = new System.Drawing.Point(2, 337);
             this.bunifuCustomLabel9.Name = "bunifuCustomLabel9";
-            this.bunifuCustomLabel9.Size = new System.Drawing.Size(123, 24);
+            this.bunifuCustomLabel9.Size = new System.Drawing.Size(115, 24);
             this.bunifuCustomLabel9.TabIndex = 7;
-            this.bunifuCustomLabel9.Text = "Toplam Fiyat:";
+            this.bunifuCustomLabel9.Text = "T.Satış Fiyat:";
             // 
             // bunifuCustomLabel8
             // 
             this.bunifuCustomLabel8.AutoSize = true;
             this.bunifuCustomLabel8.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bunifuCustomLabel8.Location = new System.Drawing.Point(23, 232);
+            this.bunifuCustomLabel8.Location = new System.Drawing.Point(23, 262);
             this.bunifuCustomLabel8.Name = "bunifuCustomLabel8";
             this.bunifuCustomLabel8.Size = new System.Drawing.Size(102, 24);
             this.bunifuCustomLabel8.TabIndex = 6;
@@ -323,11 +370,12 @@ namespace StokTakipOtomasyonu
             // 
             this.bunifuCustomLabel7.AutoSize = true;
             this.bunifuCustomLabel7.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.bunifuCustomLabel7.Location = new System.Drawing.Point(15, 193);
+            this.bunifuCustomLabel7.Location = new System.Drawing.Point(15, 190);
             this.bunifuCustomLabel7.Name = "bunifuCustomLabel7";
             this.bunifuCustomLabel7.Size = new System.Drawing.Size(110, 24);
             this.bunifuCustomLabel7.TabIndex = 5;
             this.bunifuCustomLabel7.Text = "Ürün Miktar:";
+            this.bunifuCustomLabel7.Click += new System.EventHandler(this.bunifuCustomLabel7_Click);
             // 
             // bunifuCustomLabel6
             // 
@@ -422,7 +470,7 @@ namespace StokTakipOtomasyonu
             this.LabelGenelToplam.AutoSize = true;
             this.LabelGenelToplam.BackColor = System.Drawing.Color.Transparent;
             this.LabelGenelToplam.Font = new System.Drawing.Font("Copperplate Gothic Bold", 15.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.LabelGenelToplam.Location = new System.Drawing.Point(528, 579);
+            this.LabelGenelToplam.Location = new System.Drawing.Point(570, 639);
             this.LabelGenelToplam.Name = "LabelGenelToplam";
             this.LabelGenelToplam.Size = new System.Drawing.Size(174, 24);
             this.LabelGenelToplam.TabIndex = 10;
@@ -447,7 +495,7 @@ namespace StokTakipOtomasyonu
             this.ButtonSatısIptal.IdleFillColor = System.Drawing.Color.White;
             this.ButtonSatısIptal.IdleForecolor = System.Drawing.Color.Black;
             this.ButtonSatısIptal.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.ButtonSatısIptal.Location = new System.Drawing.Point(1236, 336);
+            this.ButtonSatısIptal.Location = new System.Drawing.Point(1266, 336);
             this.ButtonSatısIptal.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ButtonSatısIptal.Name = "ButtonSatısIptal";
             this.ButtonSatısIptal.Size = new System.Drawing.Size(127, 32);
@@ -473,7 +521,7 @@ namespace StokTakipOtomasyonu
             this.ButtonSıl.IdleFillColor = System.Drawing.Color.White;
             this.ButtonSıl.IdleForecolor = System.Drawing.Color.Black;
             this.ButtonSıl.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.ButtonSıl.Location = new System.Drawing.Point(1236, 294);
+            this.ButtonSıl.Location = new System.Drawing.Point(1266, 294);
             this.ButtonSıl.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ButtonSıl.Name = "ButtonSıl";
             this.ButtonSıl.Size = new System.Drawing.Size(127, 32);
@@ -499,7 +547,7 @@ namespace StokTakipOtomasyonu
             this.ButtonSatısYap.IdleFillColor = System.Drawing.Color.White;
             this.ButtonSatısYap.IdleForecolor = System.Drawing.Color.Black;
             this.ButtonSatısYap.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.ButtonSatısYap.Location = new System.Drawing.Point(1062, 574);
+            this.ButtonSatısYap.Location = new System.Drawing.Point(1135, 631);
             this.ButtonSatısYap.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ButtonSatısYap.Name = "ButtonSatısYap";
             this.ButtonSatısYap.Size = new System.Drawing.Size(124, 32);
@@ -525,7 +573,7 @@ namespace StokTakipOtomasyonu
             this.ButtonEkle.IdleFillColor = System.Drawing.Color.White;
             this.ButtonEkle.IdleForecolor = System.Drawing.Color.Black;
             this.ButtonEkle.IdleLineColor = System.Drawing.Color.SeaGreen;
-            this.ButtonEkle.Location = new System.Drawing.Point(326, 574);
+            this.ButtonEkle.Location = new System.Drawing.Point(326, 634);
             this.ButtonEkle.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.ButtonEkle.Name = "ButtonEkle";
             this.ButtonEkle.Size = new System.Drawing.Size(86, 32);
@@ -541,7 +589,7 @@ namespace StokTakipOtomasyonu
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(326, 93);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(903, 473);
+            this.dataGridView1.Size = new System.Drawing.Size(933, 533);
             this.dataGridView1.TabIndex = 5;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
@@ -684,7 +732,7 @@ namespace StokTakipOtomasyonu
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(1367, 635);
+            this.ClientSize = new System.Drawing.Size(1405, 669);
             this.Controls.Add(this.bunifuGradientPanel1);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -747,6 +795,10 @@ namespace StokTakipOtomasyonu
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.Timer timer1;
         private System.Windows.Forms.TextBox textID;
+        private System.Windows.Forms.TextBox alisfiyat;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel12;
+        private System.Windows.Forms.TextBox talisfiyat;
+        private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel11;
     }
 }
 

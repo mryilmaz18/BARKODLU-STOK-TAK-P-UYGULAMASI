@@ -23,12 +23,13 @@ namespace StokTakipOtomasyonu
         private void satıslistele()
         {
             baglanti.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("Select *From Satıs", baglanti);
-            sda.Fill(daset, "Satıs");
-            dataGridView1.DataSource = daset.Tables["Satıs"];
+            SqlDataAdapter sda = new SqlDataAdapter("Select *From Satıs1", baglanti);
+            sda.Fill(daset, "Satıs1");
+            dataGridView1.DataSource = daset.Tables["Satıs1"];
             baglanti.Close();
 
         }
+
 
         private void SatısListele_Load(object sender, EventArgs e)
         {
@@ -40,8 +41,15 @@ namespace StokTakipOtomasyonu
             try
             {
                 baglanti.Open();
-                SqlCommand komut = new SqlCommand("Select Sum(ToplamFiyat) from Satıs", baglanti);
-                LabelGenelToplam.Text = "GENEL TOPLAM    " + komut.ExecuteScalar() + "  TL";
+                SqlCommand komut1 = new SqlCommand("Select Sum(ToplamAlısFiyat) from Satıs1", baglanti);
+                textalıs.Text =komut1.ExecuteScalar() + "  TL";
+                textalıs.Enabled = false;
+                SqlCommand komut = new SqlCommand("Select Sum(ToplamSatısFiyat) from Satıs1", baglanti);
+                textsatıs.Text =komut.ExecuteScalar() + "  TL";
+                textsatıs.Enabled = false;
+                SqlCommand komut2 = new SqlCommand("Select Sum(ToplamSatısFiyat) - Sum(ToplamAlısFiyat) from Satıs1 ", baglanti);
+                textkar.Text = komut2.ExecuteScalar() + "  TL";
+                textkar.Enabled = false;
                 baglanti.Close();
             }
             catch (Exception)
@@ -58,13 +66,35 @@ namespace StokTakipOtomasyonu
                 return;
             }
             baglanti.Open();
-            SqlCommand komut = new SqlCommand("Delete From Satıs where ID='" + dataGridView1.CurrentRow.Cells["ID"].Value.ToString() + "'", baglanti);
+            SqlCommand komut = new SqlCommand("Delete From Satıs1 where ID='" + dataGridView1.CurrentRow.Cells["ID"].Value.ToString() + "'", baglanti);
             komut.ExecuteNonQuery();
             baglanti.Close();
             MessageBox.Show("Satış Silindi");
-            daset.Tables["Satıs"].Clear();
+            daset.Tables["Satıs1"].Clear();
             satıslistele();
             satishesapla();
         }
+
+        private void textsatisAra_TextChanged(object sender, EventArgs e)
+        {
+            DataTable tablo = new DataTable();
+            baglanti.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("Select*From Satıs1 where BarkodNo like'%" + textsatisAra.Text + "%'or UrunAdı like'%" + textsatisAra.Text + "%'or AdSoyad like'%" + textsatisAra.Text + "%'or Tc like'%" + textsatisAra.Text + "%'or Telefon like'%" + textsatisAra.Text + "%'or Tarih like'%" + textsatisAra.Text + "%'", baglanti);
+            sda.Fill(tablo);
+            dataGridView1.DataSource = tablo;
+            baglanti.Close();
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void ButtonSatısIptal_Click(object sender, EventArgs e)
+        {
+
+        }
+
+     
     }
 }

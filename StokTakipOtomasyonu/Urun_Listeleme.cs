@@ -148,5 +148,10 @@ namespace StokTakipOtomasyonu
             dataGridView1.DataSource = tablo;
             baglanti.Close();
         }
+
+        private void bunifuCustomLabel7_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
